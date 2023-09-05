@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="image.jpg" usemap="#map">
+	<map name="map">
+        <area shape="rect" coords="0,0,164,241" href="/answers/window.html" alt="Window" target="response">
+		<area shape="rect" coords="485,409,618,550" href="/answers/glass.html" alt="Glass" target="response">
+		<area shape="rect" coords="134,308,304,438" href="/answers/decanter.html" alt="decanter" target="response"> 
+		<area shape="rect" coords="152,462,459,617" href="/answers/salad.html" alt="salad" target="response"> 
+		<area shape="rect" coords="500,554,636,636" href="/answers/fork.html" alt="salad" target="response"> 
+	</map>
+    <script>
+        document.querySelector('img').addEventListener('click',(event)=>{
+            console.log(event);
+            const x = event.offsetX; // получаем координату X мыши
+            const y = event.offsetY; // получаем координату Y мыши
+
+            console.log(`Координаты мыши: x=${x}, y=${y}`); // выводим координаты мыши в консоль
+        })
+    </script>
+</body>
+</html>

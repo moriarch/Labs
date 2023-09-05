@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [
+            {
+                id:0,
+                name: 'User no.1'
+            },
+            {
+                id:1,
+                name: 'User no.2'
+            },{
+                id:2,
+                name: 'User no.3'
+            },
+        ]
+        let object = {
+            array: array,
+            getElement:function(id){
+                for(var i=0; i<this.array.length; i++){
+                    if(this.array[i].id===id) return this.array[i]
+                }
+            }
+        }
+        console.log(
+            array,
+            object,
+            object.getElement(1)
+        )
+    </script>
+</body>
+</html>

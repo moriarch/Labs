@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+h2{
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+p{
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.main-text{
+    margin-left: 15px;
+    margin-right: 15px;
+}
